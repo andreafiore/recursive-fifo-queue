@@ -36,7 +36,7 @@ public class FIFOQueue<T> {
         T n = this.item;
         this.head = this.tail;
         this.tail = this.tail != null ? this.tail.tail : null;
-        this.item = this.head != null ? (T)this.head.item : null;
+        this.item = this.head != null ? this.head.item : null;
         return n;
     }
     
