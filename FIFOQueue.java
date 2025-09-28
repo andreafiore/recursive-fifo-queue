@@ -1,8 +1,8 @@
 public class FIFOQueue<T> {
     
     private T item;
-    private FIFOQueue head;
-    private FIFOQueue tail;
+    private FIFOQueue<T> head;
+    private FIFOQueue<T> tail;
     
     public FIFOQueue(T item) {
         this.item = item;
